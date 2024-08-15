@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own webpage</title>
+    <style>
+        .container{
+            
+            width: 100%;
+            height:400px;
+     }
+        
+        .titlediv{
+          
+            margin-top: 5%;
+        }
+        .gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+ }
+ .dpimg{
+    height: 200px;
+    border-radius: 30%;
+    border: solid  #ff4c68 2px;
+
+ }
+ @media (min-width:319px){
+    .skillit{
+        margin-top: 0px;
+    }
+    .skillimg{
+        width: 70%;
+    }
+
+ }@media( max-width:989){
+    .pro{
+        height:20%;
+    }
+}
+ p {
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ 
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Modern+Antiqua&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="margin: 0%;">
+    <section id="title">
+    <div class="gradient-background">
+        <div class="container" style=" display:grid; justify-content: center; align-items: center; grid-template-columns:40%; grid-template-rows: 100%;">
+            <div class="container1" style="display:grid; justify-content: center; align-items: center;">
+                <div class="titlediv "><h1  class="modern-antiqua-regular " style="margin: 0%; font: 5em serif;">I am DP</h1></div>
+                <div class="titlediv"><p class="modern-antiqua-regular"style="margin-top:1%; text-align: center;">a frontend developer</p></div>
+            </div>
+        </div>
+    </div>
+   
+   </section>
+   <section id="logo">
+     <div class="container" style="display: grid; grid-template-rows:100%; grid-template-columns: 45%; justify-content: center; margin-top: 50px;" >
+        <div style="display: grid;grid-template-rows: 50% 10% 10%; justify-content: center;">
+            <div style="display: flex; justify-content: center;"><img class="dpimg" src="./images/dp.jpg"></div>
+            <div style="display: flex; justify-content: center;"><h1 style="margin-bottom: 10%;"> Hello Guys</h1></div>
+            <div style="display: flex; justify-content: center; text-align: center; margin-top: 5%;"><p> I am a frontend developer. I am an Information Technology student, and I am also pursuing Fullstack.</p></div>
+    </div>
+     </div>
+   </section>
+   
+   <h2 style="text-align: center; font-size:xxx-large;margin-bottom:5%;"> My skills</h2>
+<section id="skill">
+ <div class="container" style="display: grid; grid-template-columns: 75%; justify-content: center;margin-bottom:0% ; height: 70%;">
+    <div>
+        <div class="skillimg">  <img src="./images/web.png" style="width: 50%; float: left; margin-right:5%;border:solid  #ff4c68 2px;"></div>
+        <div class="skillit"> <h2> Design and Development </h2>
+            <p>I started learning to code when I was 16 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing web applications.</p>
+
+        </div>
+    </div>
+</div>
+</section>
+<h2 style="text-align: center; font-size:xxx-large; margin-bottom:5%; margin-top: 5%;"> My Projects</h2>
+<section id="Projects">
+    <div class="pro" style=" width: 80%; margin-bottom: 5%;">
+      <div id="carouselExampleIndicators" class="carousel slide " style="display:grid;justify-content: center;align-items: center; margin-left: 20%;border:solid  #ff4c68 2px;" >
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn btn-dark" aria-current="true" aria-label="Slide 1" ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"  class="btn btn-dark"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"  class="btn btn-dark"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="./images/dogpro.png" class="d-block w-100" alt="dog">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/movierank.png" class="d-block w-100" alt="movie">
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/move.png" class="d-block w-100" alt="dog">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</section> 
+<section id="touch">
+    <h2  style="text-align: center; font-size:xxx-large; ">Contact Me</h2>
+</section>
+<hr/>
+<footer style="height: 200px;">
+    <div class="gradient-background" style="height: 100%;">
+        <div style="display: grid; justify-content: center; height: 100%;align-items: center;">
+        <div style="display: grid; justify-content: center; height: 100%;align-items: center;"><a href="https://www.linkedin.com/feed/" style="justify-content: center;margin-bottom:5%;color:white;">linkedin</a>
+            <a href="https://www.instagram.com/" style="color: white;">instagram</a></div>
+            <h6 style="text-align: center;margin: 0%; color: white;" > &copy;2024 Deepak Priyan | @ DP</h6>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
